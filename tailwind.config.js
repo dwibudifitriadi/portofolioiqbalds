@@ -3,6 +3,7 @@ import daisyui from "daisyui"
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
+    "./components/**/*.{js,ts,jsx,tsx}",
     extend: {},
     colors: {
       'iqbal-yellow': {
