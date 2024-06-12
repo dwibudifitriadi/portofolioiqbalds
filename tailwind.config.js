@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui"
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*. 
-{js,ts,jsx,tsx}"],
+  purge: ["./public/**/*.{js,html}"],
   content: ["./public/**/*.{html,js}"],
   theme: {
     "./components/**/*.{js,ts,jsx,tsx}",
