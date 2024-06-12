@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/final.css">
+    <!-- <link rel="stylesheet" href="/src/boxicons.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .button-container {
+            display: flex;
+            /* background-color: #5a72a0; */
+            width: 350px;
+            height: 50px;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 10px;
+            background-color: #fff;
+            border-color: #5a72a0;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+                rgba(27, 133, 219, 0.5) 5px 10px 15px;
+        }
+
+        .tombol {
+            outline: 0 !important;
+            border: 0 !important;
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* color: #fff; */
+            transition: all ease-in-out 0.3s;
+            cursor: pointer;
+        }
+
+        .tombol:hover {
+            transform: translateY(-3px);
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+
+        </div>
+        <div class="navbar-center">
+            <a class="btn btn-ghost text-xl">iqbaldwisaputra</a>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="https://www.instagram.com/__1kbalee">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/iqbaal.das">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="button-container fixed bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center space-x-4">
+        <a href="index.html" class="tombol">
+            <i class='bx bx-home-alt icon'></i>
+        </a>
+        <a href="timeline.html" class="tombol">
+            <i class='bx bx-time icon'></i>
+        </a>
+        <a href="contact.html" class="tombol">
+            <i class='bx bx-envelope'></i>
+        </a>
+        <a href="skills.html" class="tombol">
+            <i class='bx bx-cog'></i>
+        </a>
+    </div>
+
+    <section class="flex items-center justify-center bg-center">
+        <div class="container">
+            <div class="card w-96">
+                <div class="flex items-center p-6">
+                    <img class="w-24 rounded-full object-cover" src="/src/img/image.png" alt="Photo">
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold">Iqbal Dwi Saputra</h3>
+                        <p class="text-gray-600 dark:text-gray-900">Fresh Graduated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <div class="px-5">
+        <h1 class="font-bold text-2xl mb-2">Tentang Saya</h1>
+        <p class="font-medium">Saya adalah lulusan dari SMK Muhammadiyah 1 Purbalingga tahun 2024, dengan keahlian di
+            bidang Teknik Komputer dan Jaringan. Saya memiliki kemampuan dalam menggunakan berbagai software, termasuk
+            Microsoft Word, Excel, dan Winbox. Saya juga terbuka untuk mencari peluang kerja di bidang lain di luar
+            pendidikan saya, dengan tujuan untuk berkontribusi dan menjadi seorang profesional yang handal.
+
+        </p>
+    </div>
+    <div class="divider"></div>
+    <div class="px-5 mb-32">
+        <h1 class="font-bold text-2xl">Skills</h1>
+        <ol class="list-decimal px-5 mt-2">
+            <li>Ableton Live</li>
+            <li>Adobe Lightroom</li>
+            <li>Alat Komunikasi</li>
+            <li>Adaptasi Cepat</li>
+        </ol>
+    </div>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        menuButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (!menuButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>

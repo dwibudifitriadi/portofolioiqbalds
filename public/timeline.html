@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/final.css">
+    <!-- <link rel="stylesheet" href="/src/boxicons.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .button-container {
+            display: flex;
+            /* background-color: #5a72a0; */
+            width: 350px;
+            height: 50px;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 10px;
+            background-color: #fff;
+            border-color: #5a72a0;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+                rgba(27, 133, 219, 0.5) 5px 10px 15px;
+        }
+
+        .tombol {
+            outline: 0 !important;
+            border: 0 !important;
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* color: #fff; */
+            transition: all ease-in-out 0.3s;
+            cursor: pointer;
+        }
+
+        .tombol:hover {
+            transform: translateY(-3px);
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+
+        </div>
+        <div class="navbar-center">
+            <a class="btn btn-ghost text-xl">iqbaldwisaputra</a>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="https://www.instagram.com/__1kbalee">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/iqbaal.das">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="button-container z-50 fixed bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center space-x-4">
+        <a href="index.html" class="tombol">
+            <i class='bx bx-home-alt icon'></i>
+        </a>
+        <a href="timeline.html" class="tombol">
+            <i class='bx bx-time icon'></i>
+        </a>
+        <a href="contact.html" class="tombol">
+            <i class='bx bx-envelope'></i>
+        </a>
+    </div>
+
+    <section class="flex items-center justify-center bg-center">
+        <div class="container">
+            <div class="card w-96">
+                <div class="flex items-center p-6">
+                    <img class="w-24 rounded-full object-cover" src="/src/img/image.png" alt="Photo">
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold">Iqbal Dwi Saputra</h3>
+                        <p class="text-gray-600 dark:text-gray-900">Fresh Graduated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <div class="px-5">
+        <h1 class="font-bold text-2xl mb-2">Education & Experince</h1>
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            <li>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-start md:text-end mb-10">
+                    <time class="font-mono italic">Juli 2021 - Mei 2024</time>
+                    <!-- component -->
+                    <div class="relative flex w-90 flex-col bg-white bg-clip-border text-gray-700 border rounded-sm">
+                        <div class="p-6">
+                            <h5
+                                class="mb-2 block font-sans text-1xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                                SMK Muhammadiyah 1 Purbalingga
+                            </h5>
+                            <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                                Teknik Komputer dan Jaringan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </li>
+            <li>
+                <hr />
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-end">
+                    <time class="font-mono italic">November 2023 - Februari 2024</time>
+                    <div class="relative flex w-90 flex-col bg-white bg-clip-border text-gray-700 border rounded-sm">
+                        <div class="p-6">
+                            <h5
+                                class="mb-2 block font-sans text-1xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                                CV.King Komputer <span class="italic font-light">Customer Service</span>
+                            </h5>
+
+                            <ul class="list-disc">
+                                <li>- Menanggapi keluhan costumer terkait dengan laptop dan melayani setiap
+                                    transaksi</li>
+                                <li>- Menjadi Jembatan antara customer dan juga servicer</li>
+                                <li>- Membuat Design poster menggunakan software Corel Draw</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </li>
+            <li>
+                <hr />
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-start md:text-end mb-10">
+                    <time class="font-mono italic">September 2023</time>
+                    <div class="relative flex w-90 flex-col bg-white bg-clip-border text-gray-700 border rounded-sm">
+                        <div class="p-6">
+                            <h5
+                                class="mb-2 block font-sans text-1xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                                Host/MC <span class="italic font-light">Freelance</span>
+                            </h5>
+
+                            <ul class="list-disc">
+                                <li>- Memiliki pengalaman dalam mengisi beberapa acara</li>
+                                <li>- Menjadi Jembatan antara customer dan juga servicer</li>
+                                <li>- Mampu berkomunikasi dengan baik kepada audience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </li>
+            <li>
+                <hr />
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-end mb-10">
+                    <time class="font-mono italic">2007</time>
+                    <div class="text-lg font-black">iPhone</div>
+                    iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile operating
+                    system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007.
+                    Since then, Apple has annually released new iPhone models and iOS updates. As of November 1, 2018,
+                    more than 2.2 billion iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global
+                    smartphone market share
+                </div>
+                <hr />
+            </li>
+            <li>
+                <hr />
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-start md:text-end mb-10">
+                    <time class="font-mono italic">2015</time>
+                    <div class="text-lg font-black">Apple Watch</div>
+                    The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness tracking,
+                    health-oriented capabilities, and wireless telecommunication, and integrates with iOS and other
+                    Apple products and services
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        menuButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (!menuButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
